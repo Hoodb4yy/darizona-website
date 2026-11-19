@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Darizona Studio is a photography and videography studio in Entebbe, Uganda, covering weddings, birthdays, events and commercials.">
+  <title>Darizona Studio | Photography and Videography in Entebbe</title>
+
+  <!-- Linked files: create css/style.css and js/script.js later -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ HEADER AND NAVIGATION ============ -->
+  <header id="top" class="site-header">
+    <a href="#top" class="logo">Darizona Studio</a>
+
+    <!-- Button for the mobile menu (JavaScript will toggle it later) -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <!-- Replace images/hero.jpg with a strong wide photo -->
+      <img src="images/hero.jpg" alt="Photographer capturing a moment at a wedding in Entebbe" class="hero-image">
+      <div class="hero-text">
+        <h1>Moments worth keeping, filmed and photographed in Entebbe</h1>
+        <p>Darizona Studio covers weddings, birthdays, events and commercial shoots, from the first photo to the final edit.</p>
+        <a href="#contact" class="button">Book a session</a>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="services">
+      <h2>What we shoot</h2>
+      <p class="section-intro">Photography, video, or both together. Tell us what you’re planning and we’ll shape a package around it.</p>
+
+      <div class="service-list">
+        <article class="service">
+          <h3>Weddings</h3>
+          <p>Full-day coverage from preparation to the last dance, with a photo album and a highlight film.</p>
+        </article>
+
+        <article class="service">
+          <h3>Birthdays</h3>
+          <p>Candid photos and short videos of the cake, the family and the people who made the day.</p>
+        </article>
+
+        <article class="service">
+          <h3>Events</h3>
+          <p>Launches, conferences, graduations and parties, covered quietly so your guests stay relaxed.</p>
+        </article>
+
+        <article class="service">
+          <h3>Commercials</h3>
+          <p>Product photos, brand videos and promotional content for businesses that want to look their best.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO GALLERY ============ -->
+    <section id="portfolio" class="portfolio">
+      <h2>Our work</h2>
+
+      <!-- Filter buttons: JavaScript will use data-filter to show and hide items -->
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="wedding">Weddings</button>
+        <button class="filter-button" data-filter="birthday">Birthdays</button>
+        <button class="filter-button" data-filter="event">Events</button>
+        <button class="filter-button" data-filter="commercial">Commercials</button>
+      </div>
+
+      <!-- Each item has data-category so the filter knows which group it belongs to -->
+      <div class="gallery">
+        <figure class="gallery-item" data-category="wedding">
+          <img src="images/wedding-1.jpg" alt="Bride and groom walking together at sunset" loading="lazy">
+          <figcaption>Wedding in Entebbe</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="birthday">
+          <img src="images/birthday-1.jpg" alt="Child blowing out candles on a birthday cake" loading="lazy">
+          <figcaption>Birthday party</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="event">
+          <img src="images/event-1.jpg" alt="Speaker addressing a crowd at a corporate event" loading="lazy">
+          <figcaption>Corporate event</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="commercial">
+          <img src="images/commercial-1.jpg" alt="Product photo of a bottle on a studio backdrop" loading="lazy">
+          <figcaption>Product shoot</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="wedding">
+          <img src="images/wedding-2.jpg" alt="Wedding rings resting on a bouquet" loading="lazy">
+          <figcaption>Wedding details</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="event">
+          <img src="images/event-2.jpg" alt="Guests dancing at an evening celebration" loading="lazy">
+          <figcaption>Evening celebration</figcaption>
+        </figure>
+      </div>
+
+      <!-- Showreel: replace with your own video file, or swap this for a YouTube embed -->
+      <div class="showreel">
+        <h3>Showreel</h3>
+        <video controls poster="images/showreel-poster.jpg" preload="none">
+          <source src="videos/showreel.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <img src="images/about.jpg" alt="The Darizona Studio team on location" class="about-image" loading="lazy">
+
+      <div class="about-text">
+        <h2>About Darizona Studio</h2>
+        <p>Darizona Studio is a photography and videography studio based in Entebbe. We started with a simple idea: the best pictures happen when people forget the camera is there.</p>
+        <p>Over the years we have covered weddings, birthdays, corporate events and commercial projects across Uganda. Every job gets the same care, whether it is a family celebration or a brand campaign.</p>
+        <p>We shoot, edit and deliver everything ourselves, so the people you meet at the shoot are the same people who finish your photos and films. You get natural, honest images and a timeline you can count on.</p>
+        <a href="#contact" class="button">Talk to us about your date</a>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="testimonials" class="testimonials">
+      <h2>What clients say</h2>
+      <!-- These are placeholder quotes. Replace with real ones. -->
+
+      <div class="testimonial-list">
+        <blockquote class="testimonial">
+          <p>They stayed out of the way and still caught every moment. Our wedding film made the whole family cry in a good way.</p>
+          <footer>[Client name], wedding</footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>Fast delivery and clean edits. Our product photos went straight onto our website and social media.</p>
+          <footer>[Client name], business owner</footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>Professional from the first call to the last file. We will book them again for our next event.</p>
+          <footer>[Client name], event organiser</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <h2>Book a session</h2>
+      <p class="section-intro">Send us the date, the place and what you have in mind. We reply within one working day.</p>
+
+      <div class="contact-layout">
+
+        <!-- Contact form.
+             GitHub Pages has no server, so the form needs a form service such as Formspree.
+             Replace YOUR_FORM_ID with the ID you get after signing up. -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday</option>
+            <option value="event">Event</option>
+            <option value="commercial">Commercial</option>
+            <option value="other">Something else</option>
+          </select>
+
+          <label for="date">Date of the shoot</label>
+          <input type="date" id="date" name="date">
+
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send message</button>
+        </form>
+
+        <!-- Contact details: replace every [placeholder] with real information -->
+        <div class="contact-details">
+          <h3>Find us</h3>
+          <address>
+            <p>Darizona Studio<br>[Street or area], Entebbe, Uganda</p>
+          </address>
+          <p>Phone: <a href="tel:+256000000000">[+256 000 000 000]</a></p>
+          <p>WhatsApp: <a href="https://wa.me/256000000000">[+256 000 000 000]</a></p>
+          <p>Email: <a href="mailto:hello@example.com">[hello@example.com]</a></p>
+
+          <h3>Follow our work</h3>
+          <ul class="social-links">
+            <li><a href="https://instagram.com/your-handle" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/your-page" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://youtube.com/@your-channel" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://tiktok.com/@your-handle" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Darizona Studio, Entebbe, Uganda. All rights reserved.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+</body>
+</html>
